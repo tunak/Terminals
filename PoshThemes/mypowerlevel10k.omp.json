@@ -51,6 +51,19 @@
       "alignment": "right",
       "segments": [
         {
+          "type": "kubectl",
+          "style": "diamond",
+          "leading_diamond": " \uE0B6",
+          "trailing_diamond": "\uE0B4",
+          "foreground": "p:white",
+          "background": "p:blue",
+          "properties": {
+            "prefix": "\uFD31 ",
+            "postfix": "",
+            "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+          }
+        },
+        {
           "background": "#4dc142",
           "foreground": "#ffffff",
           "invert_powerline": true,
